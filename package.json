@@ -1,0 +1,12 @@
+{
+  "name": "swing-oracle-india",
+  "version": "4.0.0",
+  "description": "Free NSE/BSE swing trade analyser — real Yahoo Finance data + RSI/MACD/EMA/BB indicators + Groq AI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev":   "node --watch server.js"
+  },
+  "engines": { "node": ">=18.0.0" },
+  "license": "MIT"
+}
