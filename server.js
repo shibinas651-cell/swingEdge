@@ -16,7 +16,9 @@
  * Zero npm packages. Pure Node.js built-ins.
  */
 
-require("dotenv").config();
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 const http  = require("http");
 const https = require("https");
 const fs    = require("fs");
