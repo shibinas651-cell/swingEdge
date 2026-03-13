@@ -16,6 +16,7 @@
  * Zero npm packages. Pure Node.js built-ins.
  */
 
+require("dotenv").config();
 const http  = require("http");
 const https = require("https");
 const fs    = require("fs");
@@ -29,7 +30,8 @@ const { scoreStock }      = require("./scoring");
 
 // ── Config ────────────────────────────────────────────────────────────────────
 const PORT       = process.env.PORT         || 3000;
-const GROQ_KEY   = process.env.GROQ_API_KEY || "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";
+const GROQ_KEY   = process.env.GROQ_API_KEY || "";
+console.log(GROQ_KEY)
 const GROQ_MODEL = process.env.GROQ_MODEL   || "llama-3.3-70b-versatile";
 const PUBLIC_DIR = path.resolve(__dirname, "public");
 
